@@ -100,7 +100,7 @@ public class OrderPage {
     }
 
     public void selectColor(String color) {
-        if (!color.equals("")) {
+        if (!color.isEmpty()) {
             String colorLocator = String.format(COLOR_PATTERN, color);
             new WebDriverWait(driver, Duration.ofSeconds(5))
                     .until(ExpectedConditions.visibilityOfElementLocated(By.xpath(colorLocator)));

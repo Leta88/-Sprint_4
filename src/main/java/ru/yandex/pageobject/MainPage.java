@@ -64,8 +64,7 @@ public class MainPage {
 
     public String getFAQResponse(String questionMessage) {
         String questionLocator = String.format(FAQ_QUESTION_PATTERN, questionMessage);
-        String paragraphText = driver.findElement(By.xpath(questionLocator + "/../following-sibling::div[contains(@id, 'accordion__panel')]//p")).getText();
-        return paragraphText;
+        return driver.findElement(By.xpath(questionLocator + "/../following-sibling::div[contains(@id, 'accordion__panel')]//p")).getText();
     }
 
 }
