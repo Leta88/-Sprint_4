@@ -12,11 +12,11 @@ public class MainPage {
     protected WebDriver driver;
 
     //Кнопка подтверждения использования Cookies
-    private By confirmCookiesUsageButton = By.id("rcc-confirm-button");
+    private final By confirmCookiesUsageButton = By.id("rcc-confirm-button");
     //Кнопка Заказать наверху страницы
-    private By newOrderButtonFirst = By.xpath(".//div[contains(@class, 'Header_Nav')]//button[contains(@class, 'Button_Button')]");
+    private final By newOrderButtonFirst = By.xpath(".//div[contains(@class, 'Header_Nav')]//button[contains(@class, 'Button_Button')]");
     //Кнопка Заказать внизу страницы
-    private By newOrderButtonSecond = By.xpath(".//div[contains(@class, 'Home_Finish')]//button[contains(@class, 'Button_Button')]");
+    private final By newOrderButtonSecond = By.xpath(".//div[contains(@class, 'Home_Finish')]//button[contains(@class, 'Button_Button')]");
 
     private static final String FAQ_QUESTION_PATTERN  = ".//div[contains(@id, 'accordion__heading') and contains(text(), '%s')]";
 

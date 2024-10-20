@@ -14,7 +14,7 @@ public class BaseUITest {
 
     @Before
     public void startUp(){
-        initFirefox();
+        initChrome();
     }
 
     @After
