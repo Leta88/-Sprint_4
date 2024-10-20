@@ -10,31 +10,31 @@ public class OrderPage {
     protected WebDriver driver;
 
     //Поле ввода даты заказа
-    private By deliveryDateInput = By.xpath(".//input[contains(@placeholder, 'Когда привезти самокат')]");
+    private final By deliveryDateInput = By.xpath(".//input[contains(@placeholder, 'Когда привезти самокат')]");
     //Подтверждение даты на календаре
-    private By deliveryDateDataPicker = By.xpath(".//div[contains(@class, 'datepicker__day--selected')]");
+    private final By deliveryDateDataPicker = By.xpath(".//div[contains(@class, 'datepicker__day--selected')]");
     //Поле ввода имени
-    private By nameInput = By.xpath(".//input[@placeholder = '* Имя']");
+    private final By nameInput = By.xpath(".//input[@placeholder = '* Имя']");
     //Поле ввода Фамилии
-    private By surnameInput = By.xpath(".//input[@placeholder = '* Фамилия']");
+    private final By surnameInput = By.xpath(".//input[@placeholder = '* Фамилия']");
     //Поле ввода адреса
-    private By addressInput = By.xpath(".//input[starts-with(@placeholder, '* Адрес')]");
+    private final By addressInput = By.xpath(".//input[starts-with(@placeholder, '* Адрес')]");
     //Выпадающий список со станциями метро
-    private By metroDropdown = By.xpath(".//input[@placeholder = '* Станция метро']");
+    private final By metroDropdown = By.xpath(".//input[@placeholder = '* Станция метро']");
     //Элемент выпадающего списка со станциями метро - конкретнная станция
-    private By mobileInput = By.xpath(".//input[starts-with(@placeholder, '* Телефон')]");
+    private final By mobileInput = By.xpath(".//input[starts-with(@placeholder, '* Телефон')]");
     //Кнопка перехода на сторую страницу полей заказа
-    private By nextButton = By.xpath(".//div[contains(@class, 'Order_Content')]//button[contains(@class, 'Button_Button')]");
+    private final By nextButton = By.xpath(".//div[contains(@class, 'Order_Content')]//button[contains(@class, 'Button_Button')]");
     //Выпадающий список с длительностью аренды
-    private By deliveryDurationDropdown = By.xpath(".//span[@class = 'Dropdown-arrow']");
+    private final By deliveryDurationDropdown = By.xpath(".//span[@class = 'Dropdown-arrow']");
     //Поле ввода комменнтария
-    private By commentInput = By.xpath(".//input[starts-with(@placeholder, 'Комментарий')]");
+    private final By commentInput = By.xpath(".//input[starts-with(@placeholder, 'Комментарий')]");
     //Кнопка совершения заказа "Заказать"
-    private By orderButton = By.xpath(".//div[contains(@class, 'Order_Buttons')]//button[contains(@class, 'Button_Button') and text()='Заказать']");
+    private final By orderButton = By.xpath(".//div[contains(@class, 'Order_Buttons')]//button[contains(@class, 'Button_Button') and text()='Заказать']");
     //Кнопка подтверждения заказа "Да"
-    private By confirmOrderButton = By.xpath(".//div[contains(@class, 'Order_Buttons')]//button[contains(@class, 'Button_Button') and text()='Да']");
+    private final By confirmOrderButton = By.xpath(".//div[contains(@class, 'Order_Buttons')]//button[contains(@class, 'Button_Button') and text()='Да']");
     //Элемент с текстом подтверждения сделанного заказа
-    private By orderConfirmationText = By.xpath(".//div[starts-with(@class, 'Order_Text')]");
+    private final By orderConfirmationText = By.xpath(".//div[starts-with(@class, 'Order_Text')]");
 
 
     public static final String METRO_STATION_PATTERN = ".//div[starts-with(@class, 'Order_Text') and text()= '%s']";
